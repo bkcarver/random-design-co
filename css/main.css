@@ -10,12 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -97,6 +91,142 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* ==========================================================================
+   Globals
+   ========================================================================== */
+
+   html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }     
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+section {
+    border-bottom: dotted grey 1px;
+}
+body {
+    position: relative;
+}
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    line-height: 1;
+    z-index: 1;
+}
+img {
+    width: 100%;
+}
+h1 {
+    font-weight: 900;
+    padding: 0 0 0 1em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+i {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    font-size: 2em;
+    padding: 0 1em 0 0;
+}
+.hero {
+    position: relative;
+}
+.hero-bg {
+    display: block;
+    position: relative;
+    z-index: -10;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2 {
+    font-size: 5.5em;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    margin: 0 0 10% 0;
+}
+h4 {
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    border: solid white 3px;
+    display: block;
+    margin: 0 15%;
+    padding: 25px 30px;
+    line-height: 1;
+}
+h4:hover {
+    color: black;
+    background-color: white;
+}
+.section-top a {
+    text-decoration: none;
+}
+.section-top h3 {
+    padding: 50px 15px 0 15px;
+    margin: 0;
+}
+.section-top p {
+    line-height: 2em;
+    font-size: 1.2em;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 0;
+}
+.project {
+    position: relative;
+    background-color: rgba(0, 0, 100, 0) ;
+    width: 50%;
+    float: left;    
+    border: white solid 2.25px;
+}
+.project-content {
+    margin-left: 75px; 
+
+}
+.project-img {
+    z-index: -20;
+    display: block;
+    position: relative;
+}
+.project-hover {
+    background-color: rgba(0, 0, 0, 0.5)  
+    color: white;  
+}
+.section-bottom {
+    overflow: auto;
+    padding: 0 15px 50px 15px;
+}
+.section-bottom h3 {
+    margin: 0;
+    padding: 50px 15px 15px 15px;
+}
+.footer {
+    text-align:center;
+    margin: 5px 0 5px 0;
+}
 
 
 
