@@ -1,24 +1,4 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -91,144 +71,121 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-/* ==========================================================================
-   Globals
-   ========================================================================== */
-
-   html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }     
-   html {
-    color: #222;
+html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+h1 h2 h3 h4 h5 {
     font-size: 1em;
-    line-height: 1.4;
-    font-family: sans-serif;
-}
-section {
-    border-bottom: dotted grey 1px;
-}
-body {
-    position: relative;
-}
-h1, h2, h3, h4 {
-    text-transform: uppercase;
-}
-header {
-    background: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    color: white;
-    line-height: 1;
-    z-index: 1;
-}
+    text-transform:uppercase;
+    font-family:sans-serif;
+    }
 img {
+    max-width: 100%;
+    }
+.page-header {
+    position: fixed;
     width: 100%;
-}
-h1 {
-    font-weight: 900;
-    padding: 0 0 0 1em;
+    max-height: 80px;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 1em;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-i {
-    position: absolute;
+    z-index: 1;
+    }
+.page-header h1 {
     margin: 0;
-    top: 50%;
-    right: 0;
-    transform: translate(0%, -50%);
-    font-size: 2em;
-    padding: 0 1em 0 0;
-}
-.hero {
+    }
+.page-header .main-nav {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    }
+body {
+    padding-top: 3.25em;
+    font-family:sans-serif;
+    }
+
+.page-section {
+    padding: 1em;
+    border-bottom:1px solid #ddd;
+    }
+.btn {
+    border: 0.125em solid #000;
+    padding: 0.75em 1em;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    }
+.btn:hover {
+    background: #000;
+    color: #fff;
+    }
+.jumbotron {
     position: relative;
-}
-.hero-bg {
-    display: block;
+    padding: 0;
+    }
+.jumbotron-bg {
     position: relative;
     z-index: -10;
-}
-.hero-content {
+    display: block;
+    width: 100%;
+    }
+.jumbotron-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-h2 {
-    font-size: 5.5em;
-    color: white;
-    line-height: 1;
-    text-align: center;
-    margin: 0 0 10% 0;
-}
-h4 {
-    font-weight: 500;
-    font-size: 2em;
-    text-align: center;
-    border: solid white 3px;
-    display: block;
-    margin: 0 15%;
-    padding: 25px 30px;
-    line-height: 1;
-}
-h4:hover {
-    color: black;
-    background-color: white;
-}
-.section-top a {
-    text-decoration: none;
-}
-.section-top h3 {
-    padding: 50px 15px 0 15px;
-    margin: 0;
-}
-.section-top p {
-    line-height: 2em;
-    font-size: 1.2em;
-    padding: 0 15px 0 15px;
-    margin: 0 0 0 0;
-}
-.project {
-    position: relative;
-    background-color: rgba(0, 0, 100, 0) ;
-    width: 50%;
-    float: left;    
-    border: white solid 2.25px;
-}
-.project-content {
-    margin-left: 75px; 
-
-}
-.project-img {
-    z-index: -20;
-    display: block;
-    position: relative;
-}
-.project-hover {
-    background-color: rgba(0, 0, 0, 0.5)  
-    color: white;  
-}
-.section-bottom {
-    overflow: auto;
-    padding: 0 15px 50px 15px;
-}
-.section-bottom h3 {
-    margin: 0;
-    padding: 50px 15px 15px 15px;
-}
-.footer {
     text-align:center;
-    margin: 5px 0 5px 0;
-}
-
-
+    line-height: 1;
+    }
+.jumbotron-content h2 {
+    font-size: 3em;
+    margin-top: 0;
+    color: #fff;
+    }
+.jumbotron-content .btn {
+    color: #fff;
+    border-color: #fff;
+    }
+.jumbotron-content .btn:hover {
+    background-color: #fff;
+    color: #000;
+    }
+.project-thumb {
+    position: relative;
+    width: 50%;
+    float: left;
+    background-color: hsla(0,100%,100%,0.75);
+    border:2px solid #fff;
+    }
+.project-thumb:hover {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    }
+.project-thumb img {
+    position: relative;
+    z-index: -10;
+    }
+.project-thumb h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: #000;
+    }
+.project-thumb:hover h3 {
+    color: #fff;
+    }
+.page-footer {
+    text-align: center;
+    }
 
 
 
